@@ -20,6 +20,7 @@ read line5
 
 printf "Printing to /dev/lp0...\n"
 
+# start of EPL code
 echo "" > /dev/lp0
 echo "." >> /dev/lp0
 echo "" >> /dev/lp0
@@ -36,6 +37,6 @@ echo "" >> /dev/lp0
 echo P1 >> /dev/lp0
 echo . >> /dev/lp0
 echo "" > /dev/lp0
+# end of EPL code
 
 printf "Printing complete.\n"
-printf "Didn't work? Do sudo chmod 666 /dev/lp0"
